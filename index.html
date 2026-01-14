@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <link rel="manifest" href="manifest.json">
+  <title>Document</title>
+</head>
+<body>
+
+  <main>
+    <h1>schedule</h1>
+    
+    <!-- js로 목록 추가될 영역 -->
+    <div class="list">
+        <!-- 예시 목록 -->
+      <ul id="all-list">
+        <li>
+          <input type="checkbox" id="list1" name="check">
+          <label for="list1">7시 기상</label>
+        </li>
+        <li>
+          <input type="checkbox" id="list2" name="check">
+          <label for="list2">hello</label>
+        </li>
+      </ul>
+    </div>
+    <!-- 목록 추가 하는 영역 -->
+    <div class="add">
+      <form action="" id="addForm">
+        <input type="text" placeholder="추가할 목록을 입력하세요." id="text">
+        <button id="btn">추가하기</button>
+        <p id="message"></p>
+      </form> 
+    </div>
+    <button id="deleteBtn">삭제하기</button>
+  </main>
+</body>
+</html>

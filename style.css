@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  font-family: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add #text {
+  border: 1px solid black;
+  border-radius: 0.5em;
+}
+
+.add #btn {
+  background-color: grey;
+  color: white;
+  border: 1px solid rgb(65, 60, 60);
+  border-radius: 0.34em;
+  transition: all 0.5s;
+}
+
+.add #btn:hover {
+  transform: rotateY(3em);
+  background-color: rgb(79, 79, 107);
+  color: whitesmoke;
+}
+
+#message {
+  color: red;
+  font-size: 0.75em;
+}
+
+input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  text-decoration-color: rgb(173, 50, 50);
+}
+
+input[type="checkbox"]:checked {
+  accent-color: pink;
+}
+
+#deleteBtn {
+  background-color: crimson;
+  color: aliceblue;
+  border: 1px solid crimson;
+  border-radius: 5em;
+}
+
+/* ========================= */
+/* 📱 반응형 코드 (추가분) */
+/* ========================= */
+
+:root {
+  font-size: 16px; /* PC 기본 */
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* 태블릿 */
+@media (max-width: 768px) {
+  :root {
+    font-size: 18px;
+  }
+
+  .add {
+    width: 100%;
+  }
+
+  .add form {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .add #text {
+    flex: 1;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 480px) {
+  :root {
+    font-size: 20px;
+  }
+
+  main {
+    padding-bottom: 5.5rem; /* 하단 입력창 공간 */
+  }
+
+  .add {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: white;
+    border-top: 1px solid #ddd;
+  }
+
+  .add form {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .add #text {
+    flex: 1;
+  }
+}
