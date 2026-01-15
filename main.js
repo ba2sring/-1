@@ -1,9 +1,5 @@
 const button = document.getElementById('btn');
 const addForm = document.getElementById('addForm');
-const message = document.getElementById('message');
-const li = document.createElement('li');
-const list_check = document.createElement('input');
-const list_label = document.createElement('label');
 // 새로고침 방지
 addForm.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -14,6 +10,10 @@ addForm.addEventListener('submit', function (e) {
 button.addEventListener('click', ()=> {
   const input = document.getElementById('text');
   var text = document.getElementById('text').value;
+  const message = document.getElementById('message');
+  const li = document.createElement('li');
+  const list_check = document.createElement('input');
+  const list_label = document.createElement('label');
   let list_id = 1;
   
   if(text == ''){
@@ -41,14 +41,6 @@ button.addEventListener('click', ()=> {
     input.value = '';
   }
 })
-
-// list_check.addEventListener('click', ()=>{
-//   if(list_check.checked){
-//     list_label.style.textDecoration = 'line-through';
-//   } else{
-//     list_label.style.textDecoration = 'none';
-//   }
-// })
 
 //   AI -----------------------------------------------
 // 선택된 리스트
