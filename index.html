@@ -6,12 +6,21 @@
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
   <link rel="manifest" href="manifest.json">
-  <title>Document</title>
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3WJFJ55MM1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3WJFJ55MM1');
+</script>
+
+  <title>Today List</title>
 </head>
 <body>
 
   <main>
-    <h1>schedule</h1>
+    <h1>Today Schedule</h1>
     
     <!-- js로 목록 추가될 영역 -->
     <div class="list">
@@ -19,23 +28,24 @@
       <ul id="all-list">
         <li>
           <input type="checkbox" id="list1" name="check">
-          <label for="list1">7시 기상</label>
+          <label for="list1">ex-list1</label>
         </li>
         <li>
           <input type="checkbox" id="list2" name="check">
-          <label for="list2">hello</label>
+          <label for="list2">ex-list2</label>
         </li>
       </ul>
     </div>
     <!-- 목록 추가 하는 영역 -->
     <div class="add">
       <form action="" id="addForm">
-        <input type="text" placeholder="추가할 목록을 입력하세요." id="text">
-        <button id="btn">추가하기</button>
+        <input type="text" placeholder="Enter additional list" id="text">
+        <button id="btn">Add</button>
         <p id="message"></p>
       </form> 
     </div>
-    <button id="deleteBtn">삭제하기</button>
+    <button id="deleteBtn">Delete</button>
+    <button id="main">On/Off</button>
   </main>
 </body>
 </html>

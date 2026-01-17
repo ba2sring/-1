@@ -1,59 +1,3 @@
-* {
-  margin: 0;
-  font-family: none;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.add #text {
-  border: 1px solid black;
-  border-radius: 0.5em;
-}
-
-.add #btn {
-  background-color: grey;
-  color: white;
-  border: 1px solid rgb(65, 60, 60);
-  border-radius: 0.34em;
-  transition: all 0.5s;
-}
-
-.add #btn:hover {
-  transform: rotateY(3em);
-  background-color: rgb(79, 79, 107);
-  color: whitesmoke;
-}
-
-#message {
-  color: red;
-  font-size: 0.75em;
-}
-
-input[type="checkbox"] {
-  width: 1.1rem;
-  height: 1.1rem;
-}
-
-input[type="checkbox"]:checked + label {
-  text-decoration: line-through;
-  text-decoration-color: rgb(173, 50, 50);
-}
-
-input[type="checkbox"]:checked {
-  accent-color: pink;
-}
-
-#deleteBtn {
-  background-color: crimson;
-  color: aliceblue;
-  border: 1px solid crimson;
-  border-radius: 5em;
-}
-
 /* ========================= */
 /* 📱 반응형 코드 (추가분) */
 /* ========================= */
@@ -116,4 +60,80 @@ main {
   .add #text {
     flex: 1;
   }
+}
+
+
+* {
+  margin: 0;
+  font-family: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add #text {
+  border: 1px solid black;
+  border-radius: 0.5em;
+}
+
+.add #btn {
+  background-color: grey;
+  color: white;
+  border: 1px solid rgb(65, 60, 60);
+  border-radius: 0.34em;
+  transition: all 0.5s;
+}
+
+.add #btn:hover {
+  transform: rotateY(3em);
+  background-color: rgb(79, 79, 107);
+  color: whitesmoke;
+}
+
+#message {
+  color: red;
+  font-size: 0.75em;
+}
+
+input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.75em;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  text-decoration-color: rgb(173, 50, 50);
+  text-decoration-thickness: 0.23em;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: pink;
+}
+
+#deleteBtn {
+  background-color: crimson;
+  color: aliceblue;
+  border: 1px solid crimson;
+  border-radius: 5em;
+}
+
+.btn-box {
+  display: flex;
+  gap: 0.45em;
+  margin-top: 0.25em;
+}
+li.important label {
+  color: orange;
+  font-weight: bold;
+}
+
+#main {
+  background-color: orange;
+  color: aliceblue;
+  border: 1px solid orange;
+  border-radius: 5em;
 }
